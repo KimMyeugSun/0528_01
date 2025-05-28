@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>감정 일기장</h1>
+    <hr>
+    <input type="date" name ='deadLine'>
+    <input type="text" name = "content" placeholder="오늘은 어떤 일이 있었나요?">
+    <input type="text" name = "manager" placeholder="그 때는 어떤 감정을 느꼈는지 한 문장으로 적어보세요">
+    <button id="add-todo" onclick="addTodoArr()">추가</button>
+    <button id="enroll-todo" onclick="enrollTodo()">등록</button>
+    <hr>
+    <input id="date" type="date">
+    <button onclick="selectTodo()">조회</button>
+    <hr>
+    <div id="todo-list"></div>
+</body>
+</html>
